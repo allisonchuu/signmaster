@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;1,700&display=swap');
+
+* {
+    background-color: rgb(54, 54, 54);
+}
+
+h1 {
+    color: yellow;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    
+}
+
+.startbtn {
+    color: yellow;
+    border-radius: 8px;
+    font-size: 20pt;
+    padding: 10px 20px;
+}
