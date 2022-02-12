@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.back {
+    background-image: url(../../assets/background.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    height: 17vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-demo {
+    width: 11ch;
+    animation: typing 2s steps(11), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Space Mono', monospace;
+    font-size: 5em;
+    color: yellow;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.btncontainer {
+    text-align: center;
+    padding-top: 27.5vh;
+}
+
+.btn1 {
+    background-color: grey;
+    color: yellow;
+    border-radius: 8px;
+    font-size: 20pt;
+    padding: 15px 55px;
+    bottom: 132px;
+}
+
+.btn2 {
+    background-color: grey;
+    color: yellow;
+    border-radius: 8px;
+    font-size: 20pt;
+    padding: 15px 30px;
+    bottom: 132px;
+}
+
+.btn:hover {
+    background-color: black;
+    font-weight: bolder;
+}
+
+.land {
+    background-image: url(../../assets/dirt.png);
+    height: 38%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.roadlp {
+    background-image: url(../../assets/road_landing_page.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 125%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+}
+
+.knights {
+    width: 200px;
+    left: 48%;
+    bottom: 300px;
+    transform: translateX(-50%);
+    position: absolute;
+    background-position: center;
+    z-index: 2;
+}
