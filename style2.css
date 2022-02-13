@@ -4,7 +4,7 @@
 }
 
 .back {
-    background-image: url(../../assets/background.png);
+    background-image: url(assets/background.png);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -14,7 +14,7 @@
 }
 
 .land {
-    background-image: url(../../assets/dirt.png);
+    background-image: url(assets/dirt.png);
     height: 220px;
     width: 100%;
     display: block;
@@ -25,7 +25,7 @@
 }
 
 .road {
-    background-image: url(../../assets/road.png);
+    background-image: url(assets/road.png);
     height: 270px;
     width: 500%;
     display: block;
@@ -44,7 +44,7 @@
 }
 
 .trees {
-    background-image: url(../../assets/tree.png);
+    background-image: url(assets/tree.png);
     height: 500px;
     width: 100%;
     display: block;
