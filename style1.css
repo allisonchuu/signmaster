@@ -68,10 +68,16 @@
     bottom: 132px;
 }
 
-.btn:hover {
+.btn1:hover {
     background-color: black;
     font-weight: bolder;
 }
+
+.btn2:hover {
+    background-color: black;
+    font-weight: bolder;
+}
+
 
 .land {
     background-image: url(assets/dirt.png);

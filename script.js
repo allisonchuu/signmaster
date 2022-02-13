@@ -57,6 +57,8 @@ cocoSsd.load().then(function (loadedModel) {
 
 var children = [];
 
+var points = 0;
+
 function predictWebcam() {
   // Now let's start classifying a frame in the stream.
   model.detect(video).then(function (predictions) {
@@ -90,6 +92,11 @@ function predictWebcam() {
         liveView.appendChild(p);
         children.push(highlighter);
         children.push(p);
+        }
+        points++;
+
+        if(points > 500){
+          window.location.href = "../end_game.html";
       }
     }
     
