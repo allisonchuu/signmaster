@@ -1,0 +1,26 @@
+<annotation>
+	<folder>collectedimages</folder>
+	<filename>ty_2.jpg</filename>
+	<path>/home/arpit/Desktop/RealTimeObjectDetection/Tensorflow/workspace/images/collectedimages/ty_2.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>450</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Thank You</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>299</xmin>
+			<ymin>48</ymin>
+			<xmax>513</xmax>
+			<ymax>356</ymax>
+		</bndbox>
+	</object>
+</annotation>
