@@ -74,7 +74,7 @@
 }
 
 .land {
-    background-image: url(/../assets/dirt.png);
+    background-image: url(../assets/dirt.png);
     height: 38%;
     width: 100%;
     display: block;
