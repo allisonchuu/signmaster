@@ -74,7 +74,7 @@
 }
 
 .land {
-    background-image: url(../assets/dirt.png);
+    background-image: url(assets/dirt.png);
     height: 38%;
     width: 100%;
     display: block;
@@ -85,7 +85,7 @@
 }
 
 .roadlp {
-    background-image: url(../../assets/road_landing_page.png);
+    background-image: url(assets/road_landing_page.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 125%;
