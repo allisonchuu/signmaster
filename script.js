@@ -4,6 +4,29 @@ const demosSection = document.getElementById('demos');
 const enableWebcamButton = document.getElementById('webcamButton');
 
 
+const loadText = document.querySelector('.loading-text')
+const bg = document.querySelector('.bg')
+
+let load = 0;
+
+let int = setInterval(blurring, 30)
+
+function blurring() {
+    load++
+
+    if(load > 99){
+        clearInterval(int)
+    }
+    
+    loadText.innerText = `${load}%`
+    loadText.style.opacity = scale(load, 0, 100, 1, 0)
+    bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
+}
+
+const scale = (num, in_min, in_max, out_min, out_max) => {
+    return (num- in_min) * (out_max - out_min) / (in_max - in_min) + out_min
+}
+
 // Check if webcam access is supported.
 function getUserMediaSupported() {
   return !!(navigator.mediaDevices &&
@@ -77,16 +100,16 @@ function predictWebcam() {
         p.innerText = predictions[n].class  + ' - with ' 
             + Math.round(parseFloat(predictions[n].score) * 100) 
             + '% confidence.';
-        p.style = 'margin-left: ' + predictions[n].bbox[0] + 'px; margin-top: '
-            + (predictions[n].bbox[1] - 10) + 'px; width: ' 
-            + (predictions[n].bbox[2] - 10) + 'px; top: 0; left: 0;';
+        p.style = 'margin-left: ' + (predictions[n].bbox[0] - 50) + 'px; margin-top: '
+            + ((predictions[n].bbox[1] - 10) - 50) + 'px; width: ' 
+            + ((predictions[n].bbox[2] - 10) - 50) + 'px; top: 0; left: 0;';
 
         const highlighter = document.createElement('div');
         highlighter.setAttribute('class', 'highlighter');
-        highlighter.style = 'left: ' + predictions[n].bbox[0] + 'px; top: '
-            + predictions[n].bbox[1] + 'px; width: ' 
-            + predictions[n].bbox[2] + 'px; height: '
-            + predictions[n].bbox[3] + 'px;';
+        highlighter.style = 'left: ' + (predictions[n].bbox[0] - 50) + 'px; top: '
+            + (predictions[n].bbox[1] - 50) + 'px; width: ' 
+            + (predictions[n].bbox[2] - 50) + 'px; height: '
+            + (predictions[n].bbox[3] - 50) + 'px;';
 
         liveView.appendChild(highlighter);
         liveView.appendChild(p);

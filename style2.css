@@ -1,6 +1,38 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono',
+        monospace;
+}
+
+body {
+    font-family: 'Space Mono',
+        monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.bg {
+    position: absolute;
+    top: -30;
+    left: -30;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(50px);
+
+}
+
+.loading-text {
+    font-size: 50px;
+    color: white;
+
 }
 
 .back {
@@ -96,7 +128,7 @@ section {
 .camView {
     position: relative;
     float: left;
-    width: calc(100% - 20px);
+    width: calc(90% - 20px);
     margin: 10px;
     cursor: pointer;
 }
@@ -116,4 +148,13 @@ section {
     border: 1px dashed #fff;
     z-index: 1;
     position: absolute;
+}
+
+.btn {
+    background-color: grey;
+    color: yellow;
+    border-radius: 8px;
+    font-size: 12pt;
+    padding: 15px 30px;
+    bottom: 132px;
 }
