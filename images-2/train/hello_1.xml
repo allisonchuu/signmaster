@@ -1,0 +1,26 @@
+<annotation>
+	<folder>collectedimages</folder>
+	<filename>hello_1.jpg</filename>
+	<path>/home/arpit/Desktop/RealTimeObjectDetection/Tensorflow/workspace/images/collectedimages/hello_1.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>450</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hello</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>450</xmin>
+			<ymin>8</ymin>
+			<xmax>696</xmax>
+			<ymax>315</ymax>
+		</bndbox>
+	</object>
+</annotation>

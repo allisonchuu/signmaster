@@ -1,0 +1,26 @@
+<annotation>
+	<folder>collectedimages</folder>
+	<filename>letsbegin_7.jpg</filename>
+	<path>/home/arpit/Desktop/RealTimeObjectDetection/Tensorflow/workspace/images/collectedimages/letsbegin_7.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>450</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Let's begin</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>135</xmin>
+			<ymin>143</ymin>
+			<xmax>456</xmax>
+			<ymax>358</ymax>
+		</bndbox>
+	</object>
+</annotation>
