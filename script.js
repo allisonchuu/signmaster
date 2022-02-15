@@ -100,16 +100,16 @@ function predictWebcam() {
         p.innerText = predictions[n].class  + ' - with ' 
             + Math.round(parseFloat(predictions[n].score) * 100) 
             + '% confidence.';
-        p.style = 'margin-left: ' + (predictions[n].bbox[0] - 50) + 'px; margin-top: '
-            + ((predictions[n].bbox[1] - 10) - 50) + 'px; width: ' 
-            + ((predictions[n].bbox[2] - 10) - 50) + 'px; top: 0; left: 0;';
+        p.style = 'margin-left: ' + (predictions[n].bbox[0]) + 'px; margin-top: '
+            + (predictions[n].bbox[1] - 10) + 'px; width: ' 
+            + (predictions[n].bbox[2]  - 10) + 'px; top: 0; left: 0;';
 
         const highlighter = document.createElement('div');
         highlighter.setAttribute('class', 'highlighter');
-        highlighter.style = 'left: ' + (predictions[n].bbox[0] - 50) + 'px; top: '
-            + (predictions[n].bbox[1] - 50) + 'px; width: ' 
-            + (predictions[n].bbox[2] - 50) + 'px; height: '
-            + (predictions[n].bbox[3] - 50) + 'px;';
+        highlighter.style = 'left: ' + (predictions[n].bbox[0]) + 'px; top: '
+            + (predictions[n].bbox[1]) + 'px; width: ' 
+            + (predictions[n].bbox[2]) + 'px; height: '
+            + (predictions[n].bbox[3]) + 'px;';
 
         liveView.appendChild(highlighter);
         liveView.appendChild(p);
@@ -119,7 +119,7 @@ function predictWebcam() {
         points++;
 
         if(points > 500){
-          window.location.href = "../end_game.html";
+          window.location.href = "end_game.html";
       }
     }
     
